@@ -1,4 +1,7 @@
 
+-   [Full Resolution O Rly Book Covers](#full-resolution-o-rly-book-covers)
+-   [Gallery of the O Rly Book Covers](#gallery-of-the-o-rly-book-covers)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 Full Resolution O Rly Book Covers
 =================================
