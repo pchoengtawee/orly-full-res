@@ -1,4 +1,8 @@
-# Full Resolution O Rly Book Covers
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+Full Resolution O Rly Book Covers
+=================================
+
 Full resolution images of the O RLY book covers made by [The Practical Dev](http://twitter.com/thepracticaldev)
 
 These are parody images and are not associated with the actual [O'Reilly Media](http://www.oreilly.com/) company or brand.
