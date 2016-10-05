@@ -28,7 +28,6 @@ These images can be used for non-commercial purposes under the [Attribution-NonC
 Clickable gallery, which is created from a small chunk of R code in an executable R Markdown [`README.Rmd`](README.Rmd). [This gist](https://gist.github.com/jennybc/0239f65633e09df7e5f4) shows similar syntax but with markdown image links, instead of html.
 
 ```{r make-smaller-pngs, include = FALSE}
-library(magick)
 library(purrr)
 fig_files <- list.files(pattern = "-big.png$")
 fig_files_smaller <- gsub("(^.*)(\\.png$)", "\\1-smaller\\2", fig_files)
@@ -36,6 +35,7 @@ fig_files_smaller <- gsub("(^.*)(\\.png$)", "\\1-smaller\\2", fig_files)
 ## make sure all PNGs exist in a 'smaller' version
 fig_files_needed <- !file.exists(fig_files_smaller)
 if (any(fig_files_needed)) {
+  library(magick)
   figs <- map(fig_files[fig_files_needed], image_read)
   figs %>% 
     map(image_scale, geometry = "400") %>% 
